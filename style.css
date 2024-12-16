@@ -270,7 +270,7 @@ font-size: 11vw;
 
 @media (max-width: 400px) {
   .sidebar {
-    width: 100%;
+    width: 50%;
   }
 }
 
