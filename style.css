@@ -6,22 +6,7 @@
   color: rgb(255, 255, 255);
 }
 
-/*  this is for background references
-.background-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden; 
-  z-index: -1; 
-}
-.background-image {
-  background: url("/images/laptop.jpg") no-repeat center center;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-} */
+
 
 body {
   background-color: #292929;
@@ -32,6 +17,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .navbar > ul {
@@ -98,7 +84,7 @@ body {
   display: flex;
   margin: auto;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 90px;
 } 
 
 .grid-container {
@@ -124,7 +110,7 @@ body {
   font-size: 1.4rem;
 }
 
-.grid-container > div span {
+.grid-container > span {
   color: rgb(116, 172, 255);
   font-weight: 700;
 }
@@ -158,7 +144,7 @@ body {
 }
 
 .illustration > img {
-    width: 100%;
+  width: 100%;
 }
 
 .container-2  {
@@ -179,7 +165,7 @@ body {
   align-items: center;
   grid-template-columns: 0.7fr 1fr;
   border-radius: 50px;
-  box-shadow: 0px 50px 15px 20px rgba(22, 22, 22, 0.521);
+  box-shadow: 0px 20px 15px 20px rgba(22, 22, 22, 0.521);
   border: 1px solid rgb(66, 66, 66);
 }
 
@@ -195,12 +181,13 @@ width: 70%;
 
 .description-2  {
   text-align: center;
-  margin: auto;
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 100%;
+  gap: 10px;
   justify-content: center;
-align-items: center;
+  align-items: center;
 }
 
 .description-2 h2 {
@@ -209,11 +196,11 @@ align-items: center;
 }
 
 .description-2  p {
-font-size: 0.9rem;
+font-size: 1rem;
 font-weight: 300;
 color: rgb(255, 255, 255);
 width: 85%;
-line-height: 18px;
+line-height: 25px;
 }
 
 
@@ -235,11 +222,11 @@ line-height: 18px;
 }
 
 .description-2 h2 {
-  font-size: 3.5rem;
+  font-size: 3.7rem;
 }
 
 .description-2 p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 }
 
@@ -253,7 +240,7 @@ line-height: 18px;
   }
   
   .description p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .grid-container-2 {
@@ -265,7 +252,7 @@ line-height: 18px;
   }
   
   .description-2 p {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   
   }
@@ -282,19 +269,15 @@ line-height: 18px;
     }
     
     .description p {
-      font-size: 0.95rem;
+      font-size: 0.89rem;
     }
     
-    .grid-container-2 {
-      width: 90%;
-    }
-  
     .description-2 h2 {
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
     
     .description-2 p {
-      font-size: 0.65rem;
+      font-size: 0.7rem;
     }
     
     }
@@ -309,13 +292,13 @@ line-height: 18px;
     display: block;
   }
 
-  
 
   .grid-container {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 0.1fr;
+    grid-template-rows: 1fr 0.1fr;
     gap: 0px;
   }
+
   .description {
     order: 2;
   }
@@ -328,32 +311,101 @@ font-size: 6rem;
   .description p {
     font-size: 1.2rem;
   }
+
+  
+  .grid-container-2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.6fr;
+  }
+
+.description-2 {
+  display: flex;
+  justify-content: flex-start;
+
+  width: 100%;
+}
+
+.description-2 h2 {
+font-size: 3.5rem;
+}
+
+.description-2 p {
+font-size: 1.2rem;
+margin-bottom: 40px;
+}
+
 } 
 
 
-
-@media (max-width: 530px) {
+@media (max-width: 540px) {
   .sidebar {
-    width: 100%;
+    width: 50%;
   }
 
   .description h2 {
     text-transform: uppercase;
-    font-size: 4.3rem;
+    font-size: 4.8rem;
   }
 
   .description p {
-    font-size: 0.9rem;
+    font-size: 0.89rem;
   }
+
+  .grid-container-2 {
+    gap: 20px;
+  }
+
+  .description-2 h2 {
+    font-size: 2.5rem;
+    }
+
+  .description-2 p {
+    font-size: 0.7rem;
+    line-height: 20px;
+    margin-bottom: 40px;
+    }
+    
 }
 
 
 
 @media (max-width: 400px) {
   .sidebar {
-    width: 100%;
+    width: 50%;
   }
+
+  .cv-btn,
+  .github-btn {
+  margin: 0px 8px;
+  width: 110px;
+  font-size: 0.8rem;
+  border-radius: 50px;
+  color: #111111;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  font-weight: 500;
 }
+  
+  .description h2 {
+    text-transform: uppercase;
+    font-size: 3.9rem;
+   
+  }
+
+  .description p {
+    font-size: 0.7rem;
+  }
+
+  .description-2 p {
+    font-size: 0.6rem;
+    line-height: 15px;
+  }
+
+
+}
+
+
+
 
 
 /*
