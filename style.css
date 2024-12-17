@@ -92,17 +92,16 @@ body {
 .menu-button {
   display: none;
 }
+
 .container {
-  height: 75vh;
   width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-bottom: 50px;
 } 
 
 .grid-container {
   width: 75%;
-  height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -154,38 +153,69 @@ body {
 
 .illustration {
   display: flex;
-
   justify-content: center;
 }
 
 .illustration > img {
-width: 100%;
+
 }
-
-
-
-
-
-/* .grid-card-1,
-.grid-card-2 {
-  border: 5px solid pink;
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  padding: 50px;
-}
-
-.grid-card-2 {
-  border: 1px solid white;
-
-} */
-
 
 .container-2  {
-  border: 1px solid rgb(66, 66, 66);
-  height: 400px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 90px;
+
+}
+
+.grid-container-2 {
+  width: 65%;
+  height: 100%;
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 0.7fr 1fr;
   border-radius: 50px;
   box-shadow: 0px 50px 15px 20px rgba(22, 22, 22, 0.521);
+  border: 1px solid rgb(66, 66, 66);
 }
+
+.illustration-2 {
+padding: 15px;
+display: flex;
+justify-content: center;
+}
+
+.illustration-2 > img {
+width: 70%;
+  }
+
+.description-2  {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+justify-content: center;
+align-items: center;
+}
+
+.description-2 h2 {
+  font-size: 3.9rem;
+  text-transform: uppercase;
+}
+
+.description-2  p {
+font-size: 0.9rem;
+font-weight: 300;
+color: rgb(255, 255, 255);
+width: 85%;
+
+line-height: 18px;
+}
+
 
 @media (max-width: 1360px) {
 .grid-container {
@@ -199,13 +229,25 @@ width: 100%;
 .description p {
   font-size: 1.2rem;
 }
+
+.grid-container-2 {
+  width: 80%;
+}
+
+.description-2 h2 {
+  font-size: 3.5rem;
+}
+
+.description-2 p {
+  font-size: 0.8rem;
+}
 }
 
 @media (max-width: 1090px) {
   .grid-container {
     width: 85%;
   }
-  
+
   .description h2 {
     font-size: 5rem;
   }
@@ -213,6 +255,19 @@ width: 100%;
   .description p {
     font-size: 1rem;
   }
+
+  .grid-container-2 {
+    width: 85%;
+  }
+
+  .description-2 h2 {
+    font-size: 3rem;
+  }
+  
+  .description-2 p {
+    font-size: 0.7rem;
+  }
+  
   }
 
 
@@ -221,7 +276,6 @@ width: 100%;
       width: 90%;
     }
 
-
     
     .description h2 {
       font-size: 4.9rem;
@@ -229,6 +283,18 @@ width: 100%;
     
     .description p {
       font-size: 0.95rem;
+    }
+    
+    .grid-container-2 {
+      width: 90%;
+    }
+  
+    .description-2 h2 {
+      font-size: 2rem;
+    }
+    
+    .description-2 p {
+      font-size: 0.65rem;
     }
     
     }
@@ -252,25 +318,38 @@ width: 100%;
     order: 2;
   }
 
+  .description h2 {
+    text-transform: uppercase;
+font-size: 6rem;
+  }
+
   .description p {
-    font-size: 3vw;
+    font-size: 1.2rem;
+  }
+} 
+
+
+
+@media (max-width: 530px) {
+  .sidebar {
+    width: 100%;
   }
 
   .description h2 {
     text-transform: uppercase;
-font-size: 11vw;
+font-size: 4.3rem;
   }
 
-  .illustration > img {
-    width: 80%;
-    }
-    
-} 
+  .description p {
+    font-size: 0.9rem;
+  }
+}
+
 
 
 @media (max-width: 400px) {
   .sidebar {
-    width: 50%;
+    width: 100%;
   }
 }
 
